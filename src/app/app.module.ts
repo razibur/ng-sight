@@ -1,3 +1,4 @@
+import { ServerService } from './services/server.service';
 import { HttpModule } from '@angular/http';
 
 import { SalesDataService } from './services/sales-data.service';
@@ -41,7 +42,8 @@ import { PaginationComponent } from './pagination/pagination.component';
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    SalesDataService
+    SalesDataService,
+    ServerService
   ],
   bootstrap: [AppComponent]
 })
